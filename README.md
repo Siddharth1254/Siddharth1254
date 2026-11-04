@@ -2,11 +2,16 @@
 
 <img src="./assets/header.svg" width="100%" alt="Siddharth Taurani — AI Engineer in the making"/>
 
+<<<<<<< HEAD
 <a href="https://www.linkedin.com/in/siddharthtaurani/"><img src="https://img.shields.io/badge/LinkedIn-siddharthtaurani-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0b1020"/></a>
 <a href="https://siddharth-taurani.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-visit-22d3ee?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0b1020"/></a>
 <a href="https://medium.com/@siddharth_1254"><img src="https://img.shields.io/badge/Medium-writing-f472b6?style=for-the-badge&logo=medium&logoColor=white&labelColor=0b1020"/></a>
 <a href="mailto:siddharth.taurani@gmail.com"><img src="https://img.shields.io/badge/Email-say_hi-a78bfa?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0b1020"/></a>
 <img src="https://komarev.com/ghpvc/?username=Siddharth1254&style=for-the-badge&color=22c55e&label=PROFILE+VIEWS" alt="profile views"/>
+=======
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/siddharthtaurani/) [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@siddharth_1254) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:siddharth.taurani@gmail.com) 
+>>>>>>> fc0bcdaf24c4d9ddfd6968d89d294aba22ae0461
 
 <br/><br/>
 
