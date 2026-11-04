@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 212" width="1200" height="212" role="img" aria-label="Animated RAG pipeline: documents, chunk and embed, FAISS index, retrieve, LLM, cited answer">
+<defs><filter id="g" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1200" height="212" rx="20" fill="#070a14"/>
+<text x="24" y="38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#64748b">// the loop I keep coming back to — retrieval-augmented generation, end to end</text>
+<path d="M186.0 121.0 H216.0" stroke="#334155" stroke-width="2" stroke-dasharray="4 5"><animate attributeName="stroke-dashoffset" values="18;0" dur="1s" repeatCount="indefinite"/></path><path d="M210.0 116.0 l6 5 -6 5" fill="none" stroke="#475569" stroke-width="2"/><path d="M384.0 121.0 H414.0" stroke="#334155" stroke-width="2" stroke-dasharray="4 5"><animate attributeName="stroke-dashoffset" values="18;0" dur="1s" repeatCount="indefinite"/></path><path d="M408.0 116.0 l6 5 -6 5" fill="none" stroke="#475569" stroke-width="2"/><path d="M582.0 121.0 H612.0" stroke="#334155" stroke-width="2" stroke-dasharray="4 5"><animate attributeName="stroke-dashoffset" values="18;0" dur="1s" repeatCount="indefinite"/></path><path d="M606.0 116.0 l6 5 -6 5" fill="none" stroke="#475569" stroke-width="2"/><path d="M780.0 121.0 H810.0" stroke="#334155" stroke-width="2" stroke-dasharray="4 5"><animate attributeName="stroke-dashoffset" values="18;0" dur="1s" repeatCount="indefinite"/></path><path d="M804.0 116.0 l6 5 -6 5" fill="none" stroke="#475569" stroke-width="2"/><path d="M978.0 121.0 H1008.0" stroke="#334155" stroke-width="2" stroke-dasharray="4 5"><animate attributeName="stroke-dashoffset" values="18;0" dur="1s" repeatCount="indefinite"/></path><path d="M1002.0 116.0 l6 5 -6 5" fill="none" stroke="#475569" stroke-width="2"/><g>
+<rect x="24" y="62" width="158" height="118" rx="16" fill="#0f1530" stroke="#a78bfa" stroke-opacity=".35" stroke-width="1.5">
+<animate attributeName="stroke-opacity" values=".35;.35;1;.35;.35" keyTimes="0;0.000;0.000;0.080;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<rect x="24" y="62" width="158" height="118" rx="16" fill="#a78bfa" opacity="0">
+<animate attributeName="opacity" values="0;0;.16;0;0" keyTimes="0;0.000;0.000;0.080;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<text x="103.0" y="104" text-anchor="middle" font-size="26">📄</text>
+<text x="103.0" y="138" text-anchor="middle" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">Documents</text>
+<text x="103.0" y="160" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#a78bfa">PDF · web · DB</text>
+<text x="36" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#475569">01</text></g><g>
+<rect x="222" y="62" width="158" height="118" rx="16" fill="#0f1530" stroke="#8b5cf6" stroke-opacity=".35" stroke-width="1.5">
+<animate attributeName="stroke-opacity" values=".35;.35;1;.35;.35" keyTimes="0;0.144;0.184;0.264;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<rect x="222" y="62" width="158" height="118" rx="16" fill="#8b5cf6" opacity="0">
+<animate attributeName="opacity" values="0;0;.16;0;0" keyTimes="0;0.144;0.184;0.264;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<text x="301.0" y="104" text-anchor="middle" font-size="26">✂️</text>
+<text x="301.0" y="138" text-anchor="middle" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">Chunk + Embed</text>
+<text x="301.0" y="160" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8b5cf6">sentence-transformers</text>
+<text x="234" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#475569">02</text></g><g>
+<rect x="420" y="62" width="158" height="118" rx="16" fill="#0f1530" stroke="#22d3ee" stroke-opacity=".35" stroke-width="1.5">
+<animate attributeName="stroke-opacity" values=".35;.35;1;.35;.35" keyTimes="0;0.328;0.368;0.448;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<rect x="420" y="62" width="158" height="118" rx="16" fill="#22d3ee" opacity="0">
+<animate attributeName="opacity" values="0;0;.16;0;0" keyTimes="0;0.328;0.368;0.448;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<text x="499.0" y="104" text-anchor="middle" font-size="26">🗂️</text>
+<text x="499.0" y="138" text-anchor="middle" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">Vector index</text>
+<text x="499.0" y="160" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#22d3ee">FAISS</text>
+<text x="432" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#475569">03</text></g><g>
+<rect x="618" y="62" width="158" height="118" rx="16" fill="#0f1530" stroke="#06b6d4" stroke-opacity=".35" stroke-width="1.5">
+<animate attributeName="stroke-opacity" values=".35;.35;1;.35;.35" keyTimes="0;0.512;0.552;0.632;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<rect x="618" y="62" width="158" height="118" rx="16" fill="#06b6d4" opacity="0">
+<animate attributeName="opacity" values="0;0;.16;0;0" keyTimes="0;0.512;0.552;0.632;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<text x="697.0" y="104" text-anchor="middle" font-size="26">🔎</text>
+<text x="697.0" y="138" text-anchor="middle" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">Retrieve</text>
+<text x="697.0" y="160" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#06b6d4">top-k + rerank</text>
+<text x="630" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#475569">04</text></g><g>
+<rect x="816" y="62" width="158" height="118" rx="16" fill="#0f1530" stroke="#f472b6" stroke-opacity=".35" stroke-width="1.5">
+<animate attributeName="stroke-opacity" values=".35;.35;1;.35;.35" keyTimes="0;0.696;0.736;0.816;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<rect x="816" y="62" width="158" height="118" rx="16" fill="#f472b6" opacity="0">
+<animate attributeName="opacity" values="0;0;.16;0;0" keyTimes="0;0.696;0.736;0.816;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<text x="895.0" y="104" text-anchor="middle" font-size="26">🧠</text>
+<text x="895.0" y="138" text-anchor="middle" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">LLM</text>
+<text x="895.0" y="160" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f472b6">LangChain · agents</text>
+<text x="828" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#475569">05</text></g><g>
+<rect x="1014" y="62" width="158" height="118" rx="16" fill="#0f1530" stroke="#22c55e" stroke-opacity=".35" stroke-width="1.5">
+<animate attributeName="stroke-opacity" values=".35;.35;1;.35;.35" keyTimes="0;0.880;0.920;1.000;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<rect x="1014" y="62" width="158" height="118" rx="16" fill="#22c55e" opacity="0">
+<animate attributeName="opacity" values="0;0;.16;0;0" keyTimes="0;0.880;0.920;1.000;1" dur="6.0s" repeatCount="indefinite"/></rect>
+<text x="1093.0" y="104" text-anchor="middle" font-size="26">✅</text>
+<text x="1093.0" y="138" text-anchor="middle" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">Answer</text>
+<text x="1093.0" y="160" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#22c55e">grounded + cited</text>
+<text x="1026" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#475569">06</text></g><circle r="6" fill="#22d3ee" filter="url(#g)"><animateMotion path="M103.0 121.0 H1093.0" dur="6.0s" begin="0s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.92;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="6.0s" begin="0s" repeatCount="indefinite"/></circle><circle r="6" fill="#f472b6" filter="url(#g)"><animateMotion path="M103.0 121.0 H1093.0" dur="6.0s" begin="2s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.92;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="6.0s" begin="2s" repeatCount="indefinite"/></circle><circle r="6" fill="#a78bfa" filter="url(#g)"><animateMotion path="M103.0 121.0 H1093.0" dur="6.0s" begin="4s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.92;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="6.0s" begin="4s" repeatCount="indefinite"/></circle>
+<text x="1176" y="200" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#475569">+ eval · tracing · observability on every hop</text>
+</svg>

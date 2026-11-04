@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="Thanks for scrolling">
+<defs><linearGradient id="w" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset=".5" stop-color="#0891b2"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs>
+<path fill="url(#w)" opacity=".35"><animate attributeName="d" dur="10s" repeatCount="indefinite" values="M0 90 C300 40 500 140 800 90 S1100 60 1200 90 V200 H0Z;M0 100 C300 140 500 50 800 110 S1100 130 1200 80 V200 H0Z;M0 90 C300 40 500 140 800 90 S1100 60 1200 90 V200 H0Z"/></path>
+<path fill="url(#w)" opacity=".7"><animate attributeName="d" dur="7s" repeatCount="indefinite" values="M0 130 C250 100 550 170 850 125 S1100 110 1200 130 V200 H0Z;M0 120 C250 160 550 100 850 140 S1100 150 1200 115 V200 H0Z;M0 130 C250 100 550 170 850 125 S1100 110 1200 130 V200 H0Z"/></path>
+<text x="600" y="176" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="16" fill="#f8fafc" letter-spacing="2">build properly · understand clearly · improve step by step</text>
+</svg>

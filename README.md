@@ -1,16 +1,177 @@
-# 💫 About Me:
-🛰️ I’m currently working on<br><br>I’m building personal projects in Data and AI, mainly using Python.<br>Lately, I’ve been exploring different tools and technologies to better understand how AI systems work — not just how to use them.<br><br>My goal is simple: build things properly, understand them clearly, and improve step by step.<br><br>🤝 I’m looking to collaborate on<br><br>I’m open to collaborating on beginner-to-intermediate AI or data projects.<br>If you’re working on something meaningful and value consistency and curiosity, I’d be glad to contribute and learn together.<br><br>📈 Always improving<br><br>I’m working on writing cleaner code, thinking more structurally, and building projects that feel more thoughtful and well-organized.<br><br>I’m always open to learning from people with more experience and improving how I approach problems.<br><br>🌱 I’m currently learning<br><br>Machine Learning fundamentals<br><br>How AI applications are structured in practice<br><br>Improving my professional French<br><br>⚡ Fun fact<br><br>I enjoy breaking complex topics into smaller pieces until they finally make sense.<br>That “click” moment is probably my favorite part of learning.
+<div align="center">
 
+<img src="./assets/header.svg" width="100%" alt="Siddharth Taurani — AI Engineer in the making"/>
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/siddharthtaurani/) [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@https://medium.com/@siddharth_1254) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:siddharth.taurani@gmail.com) 
+<a href="https://www.linkedin.com/in/siddharthtaurani/"><img src="https://img.shields.io/badge/LinkedIn-siddharthtaurani-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0b1020"/></a>
+<a href="https://siddharth-taurani.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-visit-22d3ee?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0b1020"/></a>
+<a href="https://medium.com/@siddharth_1254"><img src="https://img.shields.io/badge/Medium-writing-f472b6?style=for-the-badge&logo=medium&logoColor=white&labelColor=0b1020"/></a>
+<a href="mailto:siddharth.taurani@gmail.com"><img src="https://img.shields.io/badge/Email-say_hi-a78bfa?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0b1020"/></a>
+<img src="https://komarev.com/ghpvc/?username=Siddharth1254&style=for-the-badge&color=22c55e&label=PROFILE+VIEWS" alt="profile views"/>
 
-# 💻 Tech Stack:
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Neo4J](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Siddharth1254&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Siddharth1254&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Siddharth1254&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<br/><br/>
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=Siddharth1254&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
+<img src="./assets/terminal.svg" width="88%" alt="Terminal showing what Sidd is building right now"/>
+
+</div>
+
+<img src="./assets/divider.svg" width="100%"/>
+
+## 🛰️ &nbsp;About me
+
+```python
+class Siddharth:
+    school   = "aivancity Paris — Programme Grande École, year 4"
+    track    = "AI & Data Science"
+    based_in = "Paris, France 🇫🇷"
+
+    builds   = ["RAG pipelines", "AI agents (MCP, LangChain)", "compliance workflows"]
+    studying = "LLM uncertainty — ClaimCheck research project"
+    shipped  = "6 AI Clinic projects for real client companies + an AI internship"
+
+    looking_for = {
+        "contract": "alternance · AI Engineering / Data Science · 12–24 months",
+        "rhythm":   "3 weeks company / 1 week school",
+        "where":    "anywhere in France — available now",
+    }
+
+    def philosophy(self):
+        return "Build things properly. Understand them clearly. Improve step by step."
+```
+
+> ⚡ **Fun fact** — I like breaking complex topics into smaller pieces until they finally *click*. That moment is my favourite part of learning.
+
+<img src="./assets/divider.svg" width="100%"/>
+
+## 🧬 &nbsp;What I build
+
+<div align="center">
+<img src="./assets/rag-pipeline.svg" width="100%" alt="Animated RAG pipeline"/>
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧾 CERC-Assistant
+RAG-based AI assistant shipped to a client through aivancity's **AI Clinic**.
+React + TypeScript front, Python back, retrieval with source grounding, and an observability layer so every answer can be traced.
+`RAG` `LangChain` `FAISS` `React` `TypeScript`
+
+</td>
+<td width="50%" valign="top">
+
+### 🔬 ClaimCheck <sub>· research</sub>
+Year-long research project on **claim-level uncertainty fingerprints** for long-form LLM output — and how surfacing them changes human decisions.
+`LLM reliability` `uncertainty` `HCI`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+### 🛠️ Pangea Summit
+AI clinic project → internship → part-time **Project Assistant – AI**.
+Over a year of building AI workflows with the same team.
+`agents` `automation` `Python`
+
+</td>
+<td valign="top">
+
+### 🏗️ AI Clinic × 6
+Real-world projects for partner companies — data extraction, AI assistants, compliance workflows — scoped, built and handed over.
+`client delivery` `data` `AI`
+
+</td>
+</tr>
+</table>
+
+## 📌 &nbsp;Featured repos
+
+<div align="center">
+
+<a href="https://github.com/Siddharth1254/mcp-debugging-agent"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Siddharth1254&repo=mcp-debugging-agent&theme=tokyonight&hide_border=true&bg_color=0b1020&title_color=a78bfa&icon_color=22d3ee&text_color=c9d1e6" width="48%"/></a>
+<a href="https://github.com/Siddharth1254/ai-cold-email-generator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Siddharth1254&repo=ai-cold-email-generator&theme=tokyonight&hide_border=true&bg_color=0b1020&title_color=a78bfa&icon_color=22d3ee&text_color=c9d1e6" width="48%"/></a>
+<a href="https://github.com/Siddharth1254/alterna-genie-mvp"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Siddharth1254&repo=alterna-genie-mvp&theme=tokyonight&hide_border=true&bg_color=0b1020&title_color=f472b6&icon_color=22d3ee&text_color=c9d1e6" width="48%"/></a>
+<a href="https://github.com/Siddharth1254/portfolio-website"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Siddharth1254&repo=portfolio-website&theme=tokyonight&hide_border=true&bg_color=0b1020&title_color=f472b6&icon_color=22d3ee&text_color=c9d1e6" width="48%"/></a>
+
+</div>
+
+<img src="./assets/divider.svg" width="100%"/>
+
+## 💻 &nbsp;Toolbox
+
+<div align="center">
+
+**AI / ML**
+
+<img src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,sklearn&theme=dark"/>
+<br/>
+<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white"/>
+<img src="https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logo=meta&logoColor=white"/>
+<img src="https://img.shields.io/badge/sentence--transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black"/>
+<img src="https://img.shields.io/badge/MCP-agents-a78bfa?style=flat-square"/>
+<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/Matplotlib-11557c?style=flat-square"/>
+<img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black"/>
+
+**Backend & apps**
+
+<img src="https://skillicons.dev/icons?i=fastapi,flask,django,react,ts,js&theme=dark"/>
+<br/>
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
+
+**Data & infra**
+
+<img src="https://skillicons.dev/icons?i=mysql,sqlite,docker,aws,vercel,githubactions,git&theme=dark"/>
+<br/>
+<img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white"/>
+
+</div>
+
+<img src="./assets/divider.svg" width="100%"/>
+
+## 📊 &nbsp;GitHub in numbers
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Siddharth1254&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0b1020&title_color=a78bfa&icon_color=22d3ee&text_color=c9d1e6&ring_color=f472b6" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Siddharth1254&layout=compact&hide_border=true&bg_color=0b1020&title_color=a78bfa&text_color=c9d1e6" height="170"/>
+
+<img src="https://streak-stats.demolab.com?user=Siddharth1254&hide_border=true&background=0b1020&ring=f472b6&fire=22d3ee&currStreakLabel=a78bfa&sideLabels=c9d1e6&currStreakNum=ffffff&sideNums=ffffff&dates=64748b" width="70%"/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Siddharth1254&bg_color=0b1020&color=c9d1e6&line=a78bfa&point=22d3ee&area=true&area_color=a78bfa&hide_border=true&custom_title=Contribution%20pulse" width="100%"/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Siddharth1254/Siddharth1254/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Siddharth1254/Siddharth1254/output/github-snake.svg"/>
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/Siddharth1254/Siddharth1254/output/github-snake-dark.svg" width="100%"/>
+</picture>
+
+</div>
+
+## 🗺️ &nbsp;Journey
+
+<details>
+<summary><b>click to expand the timeline</b></summary>
+<br/>
+
+| When | What |
+|---|---|
+| **2026 →** | 🔬 ClaimCheck research project · 🎯 looking for an AI / Data alternance |
+| **Jan – Apr 2026** | 🧾 CERC — RAG assistant shipped (AI Clinic) |
+| **Oct 2025 – Apr 2026** | 🛠️ Pangea Summit — Project Assistant, Artificial Intelligence (part-time) |
+| **Sep – Dec 2025** | 📑 AF Advisory (AI Clinic) |
+| **May – Aug 2025** | 💼 Pangea Summit — AI internship |
+| **Jan – Apr 2025** | 🌍 Pangea Summit (AI Clinic) |
+| **Sep – Dec 2024** | 📊 CMI Stratégies — data extraction (AI Clinic) |
+| **2023 – 2024** | 🌱 Substrate AI · X&Y Corp — first AI Clinic projects |
+
+</details>
+
+## 🤝 &nbsp;Let's build something
+
+I'm open to collaborating on AI and data projects — especially anything involving **retrieval, agents, or making LLMs more trustworthy**.
+If you're hiring an **alternant in AI Engineering or Data Science**, my inbox is open → **siddharth.taurani@gmail.com**
+
+<img src="./assets/footer.svg" width="100%" alt="build properly · understand clearly · improve step by step"/>
