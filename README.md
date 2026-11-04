@@ -2,16 +2,11 @@
 
 <img src="./assets/header.svg" width="100%" alt="Siddharth Taurani — AI Engineer in the making"/>
 
-<<<<<<< HEAD
 <a href="https://www.linkedin.com/in/siddharthtaurani/"><img src="https://img.shields.io/badge/LinkedIn-siddharthtaurani-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0b1020"/></a>
 <a href="https://siddharth-taurani.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-visit-22d3ee?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0b1020"/></a>
 <a href="https://medium.com/@siddharth_1254"><img src="https://img.shields.io/badge/Medium-writing-f472b6?style=for-the-badge&logo=medium&logoColor=white&labelColor=0b1020"/></a>
 <a href="mailto:siddharth.taurani@gmail.com"><img src="https://img.shields.io/badge/Email-say_hi-a78bfa?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0b1020"/></a>
 <img src="https://komarev.com/ghpvc/?username=Siddharth1254&style=for-the-badge&color=22c55e&label=PROFILE+VIEWS" alt="profile views"/>
-=======
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/siddharthtaurani/) [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@siddharth_1254) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:siddharth.taurani@gmail.com) 
->>>>>>> fc0bcdaf24c4d9ddfd6968d89d294aba22ae0461
 
 <br/><br/>
 
@@ -94,10 +89,10 @@ Real-world projects for partner companies — data extraction, AI assistants, co
 
 <div align="center">
 
-<a href="https://github.com/Siddharth1254/mcp-debugging-agent"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Siddharth1254&repo=mcp-debugging-agent&theme=tokyonight&hide_border=true&bg_color=0b1020&title_color=a78bfa&icon_color=22d3ee&text_color=c9d1e6" width="48%"/></a>
-<a href="https://github.com/Siddharth1254/ai-cold-email-generator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Siddharth1254&repo=ai-cold-email-generator&theme=tokyonight&hide_border=true&bg_color=0b1020&title_color=a78bfa&icon_color=22d3ee&text_color=c9d1e6" width="48%"/></a>
-<a href="https://github.com/Siddharth1254/alterna-genie-mvp"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Siddharth1254&repo=alterna-genie-mvp&theme=tokyonight&hide_border=true&bg_color=0b1020&title_color=f472b6&icon_color=22d3ee&text_color=c9d1e6" width="48%"/></a>
-<a href="https://github.com/Siddharth1254/portfolio-website"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Siddharth1254&repo=portfolio-website&theme=tokyonight&hide_border=true&bg_color=0b1020&title_color=f472b6&icon_color=22d3ee&text_color=c9d1e6" width="48%"/></a>
+<a href="https://github.com/Siddharth1254/mcp-debugging-agent"><img src="./profile/pin-mcp-debugging-agent.svg" width="48%" alt="mcp-debugging-agent"/></a>
+<a href="https://github.com/Siddharth1254/ai-cold-email-generator"><img src="./profile/pin-ai-cold-email-generator.svg" width="48%" alt="ai-cold-email-generator"/></a>
+<a href="https://github.com/Siddharth1254/alterna-genie-mvp"><img src="./profile/pin-alterna-genie-mvp.svg" width="48%" alt="alterna-genie-mvp"/></a>
+<a href="https://github.com/Siddharth1254/portfolio-website"><img src="./profile/pin-portfolio-website.svg" width="48%" alt="portfolio-website"/></a>
 
 </div>
 
@@ -140,12 +135,10 @@ Real-world projects for partner companies — data extraction, AI assistants, co
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Siddharth1254&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0b1020&title_color=a78bfa&icon_color=22d3ee&text_color=c9d1e6&ring_color=f472b6" height="170"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Siddharth1254&layout=compact&hide_border=true&bg_color=0b1020&title_color=a78bfa&text_color=c9d1e6" height="170"/>
+<img src="./profile/stats.svg" height="170" alt="GitHub stats"/>
+<img src="./profile/top-langs.svg" height="170" alt="Top languages"/>
 
 <img src="https://streak-stats.demolab.com?user=Siddharth1254&hide_border=true&background=0b1020&ring=f472b6&fire=22d3ee&currStreakLabel=a78bfa&sideLabels=c9d1e6&currStreakNum=ffffff&sideNums=ffffff&dates=64748b" width="70%"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Siddharth1254&bg_color=0b1020&color=c9d1e6&line=a78bfa&point=22d3ee&area=true&area_color=a78bfa&hide_border=true&custom_title=Contribution%20pulse" width="100%"/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Siddharth1254/Siddharth1254/output/github-snake-dark.svg"/>
