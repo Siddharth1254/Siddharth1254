@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Siddharth Taurani — AI Engineer in the making">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Siddharth Taurani — AI &amp; Data Science · building intelligent systems, end to end">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#070a14"/>
@@ -87,7 +87,7 @@
       </text>
       <text x="68" y="180" font-size="70" font-weight="800" fill="url(#name)" letter-spacing="-1.5">Siddharth Taurani</text>
       <text x="72" y="226" font-size="23" fill="#c9d1e6" font-weight="500">
-        AI Engineer in the making — <tspan fill="#22d3ee">RAG</tspan> · <tspan fill="#a78bfa">Agents</tspan> · <tspan fill="#f472b6">LLM reliability</tspan>
+        <tspan fill="#a78bfa">AI</tspan> &amp; <tspan fill="#22d3ee">Data Science</tspan> · building intelligent systems, <tspan fill="#f472b6">end to end</tspan>
       </text>
 
       <!-- status pill -->

@@ -1,0 +1,107 @@
+name: Profile art
+
+# Generates every daily-refreshed SVG (snake, stats, top languages, streak,
+# heatmap) into ONE folder and publishes it to the `output` branch in a single
+# step. Nothing here ever commits to `main` — only Sidd does.
+#
+# Why one workflow: crazy-max/ghaction-github-pages replaces the whole target
+# branch with build_dir, so separate publishers would wipe each other's files.
+#
+# README loads the results from:
+#   https://raw.githubusercontent.com/Siddharth1254/Siddharth1254/output/<file>.svg
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # once a day
+  workflow_dispatch:        # run it by hand from the Actions tab
+  push:
+    branches: [main]
+    paths:                  # re-render only when the generators change
+      - "scripts/**"
+      - ".github/workflows/profile-art.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-art
+  cancel-in-progress: true
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    env:
+      BUILD: build
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: mkdir -p "$BUILD"
+
+      # ---- contribution snake -------------------------------------------------
+      - name: Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            build/github-snake.svg
+            build/github-snake-dark.svg?palette=github-dark&color_snake=#22d3ee&color_dots=#161b22,#3b1f6e,#6d28d9,#a78bfa,#f472b6
+
+      # ---- stats + top languages ----------------------------------------------
+      # STATS_TOKEN (classic PAT: read:user + repo) unlocks private contributions.
+      # Without it we fall back to the workflow token (public data only).
+      - name: Stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: >-
+            {"username":"${{ github.repository_owner }}","show_icons":true,"include_all_commits":true,
+            "count_private":true,"hide_rank":true,"hide":"stars,issues",
+            "hide_border":true,"bg_color":"0b1020","title_color":"a78bfa","icon_color":"22d3ee",
+            "text_color":"c9d1e6","ring_color":"f472b6"}
+          path: build/stats.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          # Jupyter notebooks are mostly JSON and inflate byte counts; weighting by
+          # repo count as well as size gives a fairer picture.
+          options: >-
+            {"username":"${{ github.repository_owner }}","layout":"compact","langs_count":6,
+            "hide":"jupyter notebook,html,css","size_weight":0.5,"count_weight":0.5,
+            "hide_border":true,"bg_color":"0b1020","title_color":"a78bfa","icon_color":"22d3ee",
+            "text_color":"c9d1e6"}
+          path: build/top-langs.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      # ---- our own generators (streak + heatmap) -------------------------------
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Streak card + contribution heatmap
+        env:
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/streak_card.py --user "${{ github.repository_owner }}" --out "$BUILD/streak.svg"
+          python scripts/heatmap.py     --user "${{ github.repository_owner }}" --out "$BUILD/heatmap.svg"
+
+      - name: Validate SVGs
+        run: |
+          sudo apt-get install -y -qq libxml2-utils >/dev/null
+          xmllint --noout "$BUILD"/*.svg
+          ls -la "$BUILD"
+
+      # ---- single publish -------------------------------------------------------
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: build
+          commit_message: "Refresh profile art"
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
