@@ -10,7 +10,7 @@ import datetime as dt
 import pathlib
 
 from contrib import fetch_calendar
-from svgkit import MONO, MUTED, TEXT, esc, terminal_frame
+from svgkit import MONO, MUTED, TEXT, esc, terminal_frame, updated_stamp
 
 # violet -> pink, level 0 is the empty cell
 LEVELS = ["#161b2e", "#3b1f6e", "#6d28d9", "#a78bfa", "#f472b6"]
@@ -51,7 +51,7 @@ def render(days, user: str) -> str:
 
     p = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" '
          f'aria-label="{esc(user)}: {total:,} contributions in the last year">',
-         terminal_frame(W, H, "sidd@github: ~$ ./contributions.sh"),
+         terminal_frame(W, H, "contribution heatmap"),
          f'<text x="40" y="84" font-family="{MONO}" font-size="16" fill="{TEXT}">'
          f'<tspan fill="#22c55e">❯</tspan> {total:,} contributions in the last year</text>']
 
@@ -79,6 +79,7 @@ def render(days, user: str) -> str:
     for i, col in enumerate(LEVELS):
         p.append(f'<rect x="{lx + 38 + i * STEP}" y="{ly}" width="{CELL}" height="{CELL}" rx="3" fill="{col}"/>')
     p.append(f'<text x="{lx + 42 + 5 * STEP}" y="{ly + 11}" font-family="{MONO}" font-size="12" fill="{MUTED}">more</text>')
+    p.append(updated_stamp(40, ly + 11, anchor="start"))
     p.append("</svg>")
     return "\n".join(p)
 

@@ -1,7 +1,8 @@
 """Render streak.svg: total contributions, current + longest streak, last 26 weeks.
 
 Usage:  python scripts/streak_card.py [--user Siddharth1254] [--out build/streak.svg]
-Needs GITHUB_TOKEN for the GraphQL API (falls back to public HTML without it).
+Needs GITHUB_TOKEN for the GraphQL API. Locally it falls back to public HTML without
+one; in CI a missing token or failed API call exits non-zero (see contrib.py).
 Animation is SMIL only (count-up via stepped <set>, rings drawing in, bars growing),
 so it plays inside GitHub's <img> sandbox.
 """
@@ -13,7 +14,7 @@ import math
 import pathlib
 
 from contrib import fetch_calendar, streaks
-from svgkit import CYAN, GREEN, MONO, MUTED, PINK, SANS, TEXT, VIOLET, esc, terminal_frame
+from svgkit import CYAN, MONO, MUTED, PINK, SANS, TEXT, VIOLET, esc, terminal_frame, updated_stamp
 
 W, H = 840, 880
 
@@ -79,10 +80,9 @@ def render(days, user: str) -> str:
 
     p = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" '
          f'aria-label="{esc(user)}: {total:,} contributions, current streak {cur} days, longest streak {lng} days">',
-         terminal_frame(W, H, f"sidd@github: ~$ ./streak.sh"),
+         terminal_frame(W, H, "contribution streak"),
          f"""<defs><linearGradient id="num" x1="0" x2="1"><stop offset="0" stop-color="{VIOLET}"/><stop offset=".55" stop-color="{CYAN}"/><stop offset="1" stop-color="{PINK}"/></linearGradient>
 <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="{VIOLET}"/><stop offset="1" stop-color="{PINK}"/></linearGradient></defs>""",
-         f'<text x="40" y="100" font-family="{MONO}" font-size="19"><tspan fill="{GREEN}">❯</tspan><tspan fill="{VIOLET}"> ./streak.sh</tspan><tspan fill="{MUTED}"> --all-time</tspan></text>',
          ]
 
     # --- total ---------------------------------------------------------------
@@ -120,6 +120,7 @@ def render(days, user: str) -> str:
         p.append(f'<rect x="{x:.1f}" y="{base}" width="{bw}" height="0" rx="4" fill="url(#bar)" opacity="{.35 + .65 * (v / peak):.2f}">'
                  f'<animate attributeName="height" from="0" to="{h:.1f}" begin="{b:.2f}s" dur=".6s" fill="freeze"/>'
                  f'<animate attributeName="y" from="{base}" to="{base - h:.1f}" begin="{b:.2f}s" dur=".6s" fill="freeze"/></rect>')
+    p.append(updated_stamp(W - 24, H - 14))
     p.append("</svg>")
     return "\n".join(p)
 

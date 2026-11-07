@@ -2,8 +2,6 @@
 
 <img src="./assets/header.svg" width="100%" alt="Siddharth Taurani — AI &amp; Data Science · building intelligent systems, end to end"/>
 
-<h3><code>sidd@github ~ $ ./links.sh</code></h3>
-
 <a href="https://www.linkedin.com/in/siddharthtaurani/"><img src="https://img.shields.io/badge/LinkedIn-siddharthtaurani-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0b1020" alt="LinkedIn"/></a>
 <a href="https://siddharth-taurani.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-visit-22d3ee?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0b1020" alt="Portfolio"/></a>
 <a href="https://medium.com/@siddharth_1254"><img src="https://img.shields.io/badge/Medium-writing-f472b6?style=for-the-badge&logo=medium&logoColor=white&labelColor=0b1020" alt="Medium"/></a>
@@ -14,10 +12,8 @@
 
 <img src="./assets/terminal.svg" width="88%" alt="Terminal: Siddharth Taurani, AI and Data Science engineer-in-training"/>
 
-<!-- whoami row: ASCII portrait (left, one-off, scripts/make_ascii_svg.py) + streak card
+<!-- portrait row: ASCII portrait (left, one-off, scripts/make_ascii_svg.py) + streak card
      (right, rebuilt daily on the output branch). Both SVGs are 840x880 so they line up. -->
-
-<h3><code>sidd@github ~ $ whoami</code></h3>
 
 <table>
 <tr>
@@ -29,8 +25,6 @@
 </div>
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
-
-<h3><code>sidd@github ~ $ cat about.py</code></h3>
 
 ## 🛰️ &nbsp;About me
 
@@ -57,8 +51,6 @@ class Siddharth:
 > ⚡ **Fun fact** — I like breaking complex topics into smaller pieces until they finally *click*. That moment is my favourite part of learning.
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
-
-<h3><code>sidd@github ~ $ ./build.sh --how</code></h3>
 
 ## 🧬 &nbsp;What I build
 
@@ -105,8 +97,6 @@ Year-long research project on **claim-level uncertainty fingerprints** for long-
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
-<h3><code>sidd@github ~ $ ls ~/toolbox</code></h3>
-
 ## 💻 &nbsp;Toolbox
 
 <div align="center">
@@ -140,8 +130,6 @@ Year-long research project on **claim-level uncertainty fingerprints** for long-
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
-<h3><code>sidd@github ~ $ ./stats.sh</code></h3>
-
 ## 📊 &nbsp;GitHub in numbers
 
 <!-- Everything in this section is rebuilt daily by .github/workflows/profile-art.yml
@@ -162,8 +150,6 @@ Year-long research project on **claim-level uncertainty fingerprints** for long-
 
 </div>
 
-<h3><code>sidd@github ~ $ git log --reverse</code></h3>
-
 ## 🗺️ &nbsp;Journey
 
 <details>
@@ -182,8 +168,6 @@ Year-long research project on **claim-level uncertainty fingerprints** for long-
 | **2023 – 2024** | 🌱 Substrate AI · X&Y Corp — first AI Clinic projects |
 
 </details>
-
-<h3><code>sidd@github ~ $ ./contact.sh</code></h3>
 
 ## 🤝 &nbsp;Let's build something
 

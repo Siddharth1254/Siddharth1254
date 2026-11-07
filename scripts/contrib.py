@@ -3,6 +3,10 @@
 Primary source is the GraphQL API (needs a token in GITHUB_TOKEN / GH_TOKEN).
 Without a token we fall back to the public contributions HTML fragment, which is
 enough for local previews. Both return a sorted list of (date, count).
+
+In CI (GITHUB_ACTIONS=true) or whenever a token is set, the fallback is never used:
+a missing token, an API error or an empty calendar exits non-zero so the workflow
+fails and the last good cards stay on the `output` branch.
 """
 from __future__ import annotations
 
@@ -10,6 +14,7 @@ import datetime as dt
 import json
 import os
 import re
+import sys
 import urllib.request
 
 API = "https://api.github.com/graphql"
@@ -117,7 +122,18 @@ def fetch_calendar(login: str, all_time: bool = False, today: dt.date | None = N
     """Return sorted [(date, count)] up to today (inclusive)."""
     today = today or dt.datetime.now(dt.timezone.utc).date()
     token = _token()
-    days = _fetch_graphql(login, token, all_time, today) if token else _fetch_html(login, all_time, today)
+    if token:
+        try:
+            days = _fetch_graphql(login, token, all_time, today)
+        except Exception as e:
+            sys.exit(f"error: GitHub GraphQL API call failed for {login!r}: {e}")
+        if not days:
+            sys.exit(f"error: GitHub GraphQL API returned an empty calendar for {login!r}")
+    elif os.environ.get("GITHUB_ACTIONS") == "true":
+        sys.exit("error: GITHUB_TOKEN is not set; refusing to use the HTML fallback in CI")
+    else:
+        print("warning: no GITHUB_TOKEN, using the public HTML fallback (local preview only)", file=sys.stderr)
+        days = _fetch_html(login, all_time, today)
     return sorted((d, c) for d, c in days.items() if d <= today)
 
 

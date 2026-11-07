@@ -1,4 +1,5 @@
 """Tiny shared SVG pieces so every generated card looks like one family."""
+import datetime as dt
 from xml.sax.saxutils import escape
 
 BG = "#0b1020"
@@ -18,8 +19,15 @@ def esc(s) -> str:
     return escape(str(s))
 
 
+def updated_stamp(x: float, y: float, anchor: str = "end", day: dt.date | None = None) -> str:
+    """Small muted 'updated YYYY-MM-DD' line (UTC run date) so stale cards are easy to spot."""
+    day = day or dt.datetime.now(dt.timezone.utc).date()
+    return (f'<text x="{x:g}" y="{y:g}" text-anchor="{anchor}" font-family="{MONO}" font-size="12" '
+            f'fill="{MUTED}" opacity=".8">updated {day.isoformat()}</text>')
+
+
 def terminal_frame(w: int, h: int, title: str, gid: str = "frameStroke") -> str:
-    """Rounded window with traffic-light dots and a title bar (same style as terminal.svg)."""
+    """Rounded window with traffic-light dots and a plain-label title bar."""
     return f"""<defs><linearGradient id="{gid}" x1="0" x2="1"><stop offset="0" stop-color="{VIOLET}"/><stop offset=".5" stop-color="{CYAN}"/><stop offset="1" stop-color="{PINK}"/></linearGradient></defs>
 <rect x="1" y="1" width="{w-2}" height="{h-2}" rx="18" fill="{BG}" stroke="url(#{gid})" stroke-opacity=".6" stroke-width="1.5"/>
 <rect x="1" y="1" width="{w-2}" height="44" rx="18" fill="{BAR}"/><rect x="1" y="28" width="{w-2}" height="17" fill="{BAR}"/>

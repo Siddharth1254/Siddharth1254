@@ -13,6 +13,7 @@ name: Profile art
 on:
   schedule:
     - cron: "17 3 * * *"   # once a day
+    - cron: "43 4 1 * *"   # monthly keepalive (see the keepalive job)
   workflow_dispatch:        # run it by hand from the Actions tab
   push:
     branches: [main]
@@ -20,22 +21,34 @@ on:
       - "scripts/**"
       - ".github/workflows/profile-art.yml"
 
-permissions:
-  contents: write
-
-concurrency:
-  group: profile-art
-  cancel-in-progress: true
+permissions: {}
 
 jobs:
   build-and-publish:
+    if: github.event.schedule != '43 4 1 * *'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    concurrency:
+      group: profile-art
+      cancel-in-progress: true
     env:
       BUILD: build
     steps:
       - uses: actions/checkout@v4
 
       - run: mkdir -p "$BUILD"
+
+      - name: Token in use
+        env:
+          HAS_STATS_TOKEN: ${{ secrets.STATS_TOKEN != '' }}
+        run: |
+          if [ "$HAS_STATS_TOKEN" = "true" ]; then
+            echo "STATS_TOKEN: set (private contributions included)"
+          else
+            echo "::warning::STATS_TOKEN is not set; cards use the workflow token (public data only)"
+          fi
 
       # ---- contribution snake -------------------------------------------------
       - name: Snake
@@ -105,3 +118,19 @@ jobs:
           jekyll: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # GitHub disables scheduled workflows in public repos after 60 days without a
+  # commit to the default branch, and the bot only ever writes to `output`.
+  # Re-enabling through the API resets that clock without touching `main`.
+  # (gautamkrishnar/keepalive-workflow is blocked by GitHub, so it's done by hand.)
+  keepalive:
+    if: github.event.schedule == '43 4 1 * *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write
+    steps:
+      - name: Re-enable this workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/profile-art.yml/enable"
